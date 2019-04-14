@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arms Request</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="MMK.css">
+	<link rel="stylesheet" type="text/css" href="Paramters.css">
+</head>
+<body>
+
+	<header class="site-header">
+		
+		<div class="bar">
+			<a href="Mike's Marketplace.html"><img src="img/logo.jpg"></a>
+
+			<nav class="navigation">
+				<a href="Mike's Marketplace.html">Home</a>
+				<a href="">About</a>
+				<a href="Arms Request.html">Arms Request</a>
+			</nav>
+		</div>
+		
+	</header>
+
+	<main class="content">
+		<h1 class="fw-300 center-text">Arms Request Form</h1>
+		<form action="">
+			<fieldset>
+				<legend></legend>
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name" placeholder="your name" required> 
+
+				<label for="email"> E-mail: </label>
+				<input type="email" name="email" id="email" placeholder="your personal e-mail" required>
+
+				<label for="phone-number"> Phone number: </label>
+				<input type="tel" id="phone" name="phone" placeholder="your phone number" required>
+
+				<label for="Arms Description"> Arms Description:</label>
+				<textarea id="Arms Description"> </textarea>
+			</fieldset>
+
+			<fieldset>
+				<legend>Contact Information</legend>
+				<label for="options"> Country</label>
+				<select id="options">
+					<option value="" disabled selected> --- select ---</option>
+					<option value="usa">United States</option>
+					<option value="mexico">Mexico</option>				
+				</select>
+				<br><br>
+
+				<label for="number">Age</label>
+				<input type="number" name="number" min="0" max="100" step="1">
+
+				
+			</fieldset>
+
+
+			<fieldset>
+				<legend>How can we contact you?</legend>
+				<label for="telephone">Telephone</label>
+				<input type="radio" name="contact" value="telephone" id="telephone">
+
+				<label for="email">E-mail</label>
+				<input type="radio" name="email" value="email" id="email">
+
+				<p>if you select telephone, select date and hour</p>
+				<label>Date:</label>
+				<input type="date" name="date" id="date">
+
+				<label for="hour">Hour:</label>
+				<input type="time" name="hour" id="hour" min="09:00" max="18:00">
+			</fieldset>
+
+			<input type="submit" name="send" class="btn">
+
+		</form>
+	</main>
+
+	<footer class="site-footer sect">
+		<div class="content content-footer">
+			<nav class="navigation">
+				<a href="Mike's MArketplace.html">Home</a>
+				<a href="">About</a>
+				<a href="">Arms Request</a>
+			</nav>
+			<p class="copyright"> All the rights are reserved &copy; </p>
+		</div>
+	</footer>
+	
+</body>
+</html>
